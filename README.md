@@ -256,10 +256,10 @@
 <table align="center" width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=sumitprajapatismr&show_icons=true&bg_color=0a0f1d&title_color=00f0ff&icon_color=00f0ff&text_color=a0aec0&border_color=00f0ff1a&locale=en" alt="GitHub Stats" width="100%" />
+      <img src="https://github-readme-stats.vercel.app/api?username=sumitprajapatismr&show_icons=true&theme=tokyonight" alt="GitHub Stats" width="100%" />
     </td>
     <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitprajapatismr&layout=compact&bg_color=0a0f1d&title_color=00f0ff&icon_color=00f0ff&text_color=a0aec0&border_color=00f0ff1a&locale=en" alt="Top Languages" width="100%" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitprajapatismr&layout=compact&theme=tokyonight" alt="Top Languages" width="100%" />
     </td>
   </tr>
   <tr>
