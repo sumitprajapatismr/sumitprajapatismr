@@ -250,27 +250,65 @@
 <br/>
 
 <!-- ==================== GITHUB ANALYTICS ==================== -->
-<h3 align="center">📊 Git Analytics Dashboard</h3>
-<p align="center">Dynamic metrics reflecting commitment, code patterns, and daily workflows.</p>
+<!-- ==================== GITHUB ANALYTICS ==================== -->
 
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api?username=sumitprajapatismr&show_icons=true&theme=tokyonight" alt="GitHub Stats" width="100%" />
-    </td>
-    <td width="50%" align="center" valign="top">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitprajapatismr&layout=compact&theme=tokyonight" alt="Top Languages" width="100%" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="top">
-      <br/>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=sumitprajapatismr&bg_color=0a0f1d&title_color=00f0ff&icon_color=00f0ff&text_color=a0aec0&border_color=00f0ff1a" alt="GitHub Streak" width="100%" />
-    </td>
-  </tr>
-</table>
+<h2 align="center">📊 Git Analytics Dashboard</h2>
 
-<br/>
+<p align="center">
+Dynamic metrics reflecting commitment, code patterns, and daily workflows.
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    height="170"
+    src="https://github-readme-stats.vercel.app/api?username=sumitprajapatismr&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"
+    alt="GitHub Stats"
+  />
+
+  <img
+    height="170"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=sumitprajapatismr&layout=compact&theme=tokyonight&hide_border=true"
+    alt="Top Languages"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com?user=sumitprajapatismr&theme=tokyonight&hide_border=true"
+    alt="GitHub Streak"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sumitprajapatismr&theme=tokyonight"
+    width="95%"
+    alt="Profile Summary"
+  />
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sumitprajapatismr&theme=tokyonight"
+    width="47%"
+  />
+
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sumitprajapatismr&theme=tokyonight"
+    width="47%"
+  />
+</p>
+
+
+<!-- ==================== END GITHUB ANALYTICS ==================== -->
 
 <!-- Section Divider -->
 <div align="center">
