@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="240">
+  <style>
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.15); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
+    @keyframes float-slow {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(180deg); }
+      100% { transform: translateY(0px) rotate(360deg); }
+    }
+    @keyframes float-fast {
+      0% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(6px); }
+      100% { transform: translateY(0px) translateX(0px); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .title {
+      font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: url(#title-grad);
+      filter: drop-shadow(0 2px 8px rgba(0, 240, 255, 0.25));
+    }
+    .subtitle {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 500;
+      font-size: 16px;
+      fill: #a0aec0;
+    }
+    .badge {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+      fill: #00f0ff;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .grid-line {
+      stroke: #00f0ff;
+      stroke-opacity: 0.04;
+      stroke-width: 1;
+    }
+    .node-pulse {
+      animation: pulse 4s infinite ease-in-out;
+      transform-origin: center;
+    }
+    .floating-mesh {
+      animation: float-slow 20s infinite linear;
+      transform-origin: 680px 120px;
+    }
+    .floating-mesh-fast {
+      animation: float-fast 8s infinite ease-in-out;
+    }
+  </style>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Title Text Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+    
+    <!-- Accent Ring Gradient -->
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0072ff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Background Grid -->
+  <g>
+    <!-- Vertical Grid Lines -->
+    <line x1="50" y1="0" x2="50" y2="240" class="grid-line" />
+    <line x1="100" y1="0" x2="100" y2="240" class="grid-line" />
+    <line x1="150" y1="0" x2="150" y2="240" class="grid-line" />
+    <line x1="200" y1="0" x2="200" y2="240" class="grid-line" />
+    <line x1="250" y1="0" x2="250" y2="240" class="grid-line" />
+    <line x1="300" y1="0" x2="300" y2="240" class="grid-line" />
+    <line x1="350" y1="0" x2="350" y2="240" class="grid-line" />
+    <line x1="400" y1="0" x2="400" y2="240" class="grid-line" />
+    <line x1="450" y1="0" x2="450" y2="240" class="grid-line" />
+    <line x1="500" y1="0" x2="500" y2="240" class="grid-line" />
+    <line x1="550" y1="0" x2="550" y2="240" class="grid-line" />
+    <line x1="600" y1="0" x2="600" y2="240" class="grid-line" />
+    <line x1="650" y1="0" x2="650" y2="240" class="grid-line" />
+    <line x1="700" y1="0" x2="700" y2="240" class="grid-line" />
+    <line x1="750" y1="0" x2="750" y2="240" class="grid-line" />
+    <line x1="800" y1="0" x2="800" y2="240" class="grid-line" />
+
+    <!-- Horizontal Grid Lines -->
+    <line x1="0" y1="40" x2="850" y2="40" class="grid-line" />
+    <line x1="0" y1="80" x2="850" y2="80" class="grid-line" />
+    <line x1="0" y1="120" x2="850" y2="120" class="grid-line" />
+    <line x1="0" y1="160" x2="850" y2="160" class="grid-line" />
+    <line x1="0" y1="200" x2="850" y2="200" class="grid-line" />
+  </g>
+
+  <!-- Decorative Tech Mesh (Right Side) -->
+  <g class="floating-mesh">
+    <!-- Circuit lines -->
+    <path d="M 600,60 L 650,120 L 730,120 L 770,180" fill="none" stroke="#00f0ff" stroke-opacity="0.15" stroke-width="1.5" />
+    <path d="M 650,120 L 620,180 L 550,180" fill="none" stroke="#0072ff" stroke-opacity="0.1" stroke-width="1.5" />
+    <path d="M 730,120 L 760,50 L 800,50" fill="none" stroke="#00f0ff" stroke-opacity="0.1" stroke-width="1.5" />
+
+    <!-- Pulsing Nodes -->
+    <circle cx="600" cy="60" r="4" fill="#00f0ff" class="node-pulse" style="animation-delay: 0s;" />
+    <circle cx="650" cy="120" r="6" fill="#0072ff" class="node-pulse" style="animation-delay: 1s;" />
+    <circle cx="730" cy="120" r="5" fill="#00f0ff" class="node-pulse" style="animation-delay: 2s;" />
+    <circle cx="770" cy="180" r="4" fill="#0072ff" class="node-pulse" style="animation-delay: 0.5s;" />
+    <circle cx="620" cy="180" r="4" fill="#00f0ff" class="node-pulse" style="animation-delay: 1.5s;" />
+    <circle cx="760" cy="50" r="5.5" fill="#0072ff" class="node-pulse" style="animation-delay: 2.5s;" />
+
+    <!-- Isometric Rings -->
+    <ellipse cx="680" cy="120" rx="90" ry="40" fill="none" stroke="url(#ring-grad)" stroke-width="2" transform="rotate(-15, 680, 120)" />
+    <ellipse cx="680" cy="120" rx="110" ry="50" fill="none" stroke="url(#ring-grad)" stroke-width="1" stroke-dasharray="8 12" transform="rotate(-15, 680, 120)" />
+  </g>
+
+  <!-- Left Side Text Info -->
+  <g transform="translate(60, 0)">
+    <!-- Recruiter Chip -->
+    <g transform="translate(0, 52)" class="floating-mesh-fast">
+      <rect width="180" height="22" rx="11" fill="#00f0ff" fill-opacity="0.08" stroke="#00f0ff" stroke-opacity="0.2" stroke-width="1" />
+      <circle cx="15" cy="11" r="4" fill="#00f0ff" class="node-pulse" />
+      <text x="26" y="15" class="badge">OPEN TO OPPORTUNITIES</text>
+    </g>
+
+    <!-- Main Name -->
+    <text x="0" y="118" class="title">Sumit Prajapati</text>
+
+    <!-- Console typing effect -->
+    <g transform="translate(0, 155)">
+      <!-- Console prompt symbol -->
+      <text x="0" y="0" font-family="'Fira Code', monospace" font-size="18" fill="#00f0ff" font-weight="bold">&gt;</text>
+      
+      <!-- Typist container with clipping -->
+      <g transform="translate(18, -3)">
+        <clipPath id="type-clip">
+          <rect x="0" y="-20" width="800" height="30">
+            <animate attributeName="width" values="0; 410; 410; 0; 0" keyTimes="0; 0.45; 0.9; 0.98; 1" dur="10s" repeatCount="indefinite" />
+          </rect>
+        </clipPath>
+        
+        <!-- Text for typing (Length: ~40 chars) -->
+        <text x="0" y="2" class="subtitle" clip-path="url(#type-clip)">MERN Stack Developer | Full Stack &amp; Java</text>
+        
+        <!-- Blinking cursor -->
+        <rect x="0" y="-14" width="2.5" height="17" fill="#00f0ff" style="animation: blink 0.8s infinite;">
+          <animate attributeName="x" values="0; 410; 410; 0; 0" keyTimes="0; 0.45; 0.9; 0.98; 1" dur="10s" repeatCount="indefinite" />
+        </rect>
+      </g>
+    </g>
+    
+    <!-- Tech subtitle dots -->
+    <g transform="translate(0, 185)">
+      <circle cx="5" cy="0" r="2.5" fill="#a0aec0" opacity="0.4"/>
+      <text x="18" y="4" font-family="'Inter', sans-serif" font-weight="500" font-size="11" fill="#718096" letter-spacing="1.5">REACT  •  NODE.JS  •  JAVA  •  MONGODB  •  TS</text>
+    </g>
+  </g>
+
+  <!-- Card Border -->
+  <rect x="0.5" y="0.5" width="849" height="239" rx="15.5" fill="none" stroke="#00f0ff" stroke-opacity="0.1" />
+</svg>
